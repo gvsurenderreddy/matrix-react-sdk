@@ -22,6 +22,8 @@ const AppTile = require('../elements/AppTile');
 const Modal = require("../../../Modal");
 
 // FIXME -- Hard coded widget config
+// const widgetHost = "https://localhost:8000";
+const widgetHost = "https://riot.im/widgetsdemo-modular"
 const roomWidgetConfig = {
     // Cooking room
     '!IAkkwswSrOSzPRWksX:matrix.org': [
@@ -32,7 +34,7 @@ const roomWidgetConfig = {
         },
         {
             id: "recipie",
-            url: "http://10.9.64.55:8000/recepie.html",
+            url: widgetHost + "/recepie.html",
             name: "Ingredients - Boeuf Bourguignon",
         },
     ],
@@ -40,7 +42,7 @@ const roomWidgetConfig = {
     '!JWeMRscvtWqfNuzmSf:matrix.org': [
         {
             id: "grafana",
-            url: "http://10.9.64.55:8000/grafana.html",
+            url: widgetHost + "/grafana.html",
             name: "Monitoring our Single-Point-Of-Failure DB",
         },
     ],
@@ -53,7 +55,7 @@ const roomWidgetConfig = {
         },
         {
             id: "thermometer",
-            url: "http://10.9.64.55:8000/index.html",
+            url: widgetHost + "/index.html",
             name: "Tip Me!!! -- Send me cash $$$",
         },
     ],
@@ -66,7 +68,7 @@ const roomWidgetConfig = {
         },
         {
             id: "thermometer",
-            url: "http://10.9.64.55:8000/index.html",
+            url: widgetHost + "/index.html",
             name: "Tip Me!!! -- Send me cash $$$",
         },
     ],
@@ -74,7 +76,7 @@ const roomWidgetConfig = {
     '!BLQjREzUgbtIsgrvRn:matrix.org': [
         {
             id: "etherpad",
-            url: "http://10.9.64.55:8000/etherpad.html",
+            url: "http://localhost:8000/etherpad.html",
             name: "Etherpad",
         },
     ],
@@ -82,7 +84,7 @@ const roomWidgetConfig = {
     '!nTUetaZELiqWcWYshy:matrix.org': [
         {
             id: "lg",
-            url: "http://localhost:8000/lg.html",
+            url: widgetHost + "/lg.html",
             name: "L&G Insurance Policy",
         },
     ],
