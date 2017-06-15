@@ -22,8 +22,8 @@ const AppTile = require('../elements/AppTile');
 const Modal = require("../../../Modal");
 
 // FIXME -- Hard coded widget config
-// const widgetHost = "https://localhost:8000";
-const widgetHost = "https://riot.im/widgetsdemo-modular"
+const widgetHost = "http://10.9.64.55:8000";
+// const widgetHost = "https://riot.im/widgetsdemo-modular"
 const roomWidgetConfig = {
     // Cooking room
     '!IAkkwswSrOSzPRWksX:matrix.org': [
@@ -76,7 +76,7 @@ const roomWidgetConfig = {
     '!BLQjREzUgbtIsgrvRn:matrix.org': [
         {
             id: "etherpad",
-            url: "http://localhost:8000/etherpad.html",
+            url: widgetHost + "/etherpad.html",
             name: "Etherpad",
         },
     ],
